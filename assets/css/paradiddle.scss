@@ -1,0 +1,125 @@
+---
+---
+/*
+ * Calculate a value to the power of n
+ */
+ @function pow($base, $n) {
+    $result: 1;
+    
+    @for $_ from 1 through $n {
+      $result: $result * $base;
+    }
+    
+    @return $result;
+  }
+  
+  /*
+   * The grid size
+   *
+   * This implements a `soft grid`, whereby spacing
+   * and font sizes and line heights are divisble by
+   * this number.
+   */
+  $increment: 8px;
+  
+  /*
+   * The scale factor used for heading sizes
+   */
+  //$scale-factor: 1.067; // minor second
+  $scale-factor: 1.125; // major second
+  //$scale-factor: 1.2;   // minor third
+  //$scale-factor: 1.25;  // major third
+  // $scale-factor: 1.333; // perfect fourth
+  // $scale-factor: 1.414; // augmented fourth
+  //$scale-factor: 1.5;   // perfect fifth
+  //$scale-factor: 1.618; // the golden ratio
+  
+  /*
+   * Base font size
+   *
+   * This is set on the html tag to make it easy to
+   * resize text (to make it more legible) throughout
+   * the document. Every other element uses `rem` values
+   * that are multiples of the value defined here.
+   */
+  html {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /*
+   * Responsive heading sizes
+   *
+   * Classes begin with `heading-`, followed by a number
+   * to dictate the size, which is the step in the modular 
+   * scale.
+   *
+   * <h1 class="heading-3">Title</h1>
+   *
+   * To use specific font sizes at certain screen widths and
+   * above, add `-w768` to the end of the class, for example:
+   *
+   * <h1 class="heading-3 heading-4-w768">Title</h1>
+   */
+    .heading-1, h1 { font-size: 1rem * pow($scale-factor, 5); line-height: 110% }
+    .heading-2, h2 { font-size: 1rem * pow($scale-factor, 4); line-height: 120% }
+    .heading-3, h3 { font-size: 1rem * pow($scale-factor, 3); line-height: 120% }
+    .heading-4, h4 { font-size: 1rem * pow($scale-factor, 2); line-height: 120% }
+    .heading-5, h5 { font-size: 1rem * $scale-factor; line-height: 150% }
+    .heading-6, h6 { font-size: 1rem; line-height: 150% }
+    .xhead { margin-bottom: 0 }
+  
+    .heading-1-x1-5 { font-size: 1rem * pow($scale-factor, 5) * 1.5; line-height: 110% }
+    .heading-1-x2 { font-size: 1rem * pow($scale-factor, 5) * 2; line-height: 110% }
+
+  @media screen and (min-width: 768px) {
+    .heading-1-w768 { font-size: 1rem; line-height: 150% }
+    .heading-2-w768 { font-size: 1rem * $scale-factor; line-height: 150% }
+    .heading-3-w768 { font-size: 1rem * pow($scale-factor, 2); line-height: 120% }
+    .heading-4-w768 { font-size: 1rem * pow($scale-factor, 3); line-height: 120% }
+    .heading-5-w768 { font-size: 1rem * pow($scale-factor, 4); line-height: 120% }
+    .heading-6-w768 { font-size: 1rem * pow($scale-factor, 5); line-height: 110% }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .heading-1-w992 { font-size: 1rem; line-height: 150% }
+    .heading-2-w992 { font-size: 1rem * $scale-factor; line-height: 150% }
+    .heading-3-w992 { font-size: 1rem * pow($scale-factor, 2); line-height: 120% }
+    .heading-4-w992 { font-size: 1rem * pow($scale-factor, 3); line-height: 120% }
+    .heading-5-w992 { font-size: 1rem * pow($scale-factor, 4); line-height: 120% }
+    .heading-6-w992 { font-size: 1rem * pow($scale-factor, 5); line-height: 110% }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .heading-1-w1200 { font-size: 1rem; line-height: 150% }
+    .heading-2-w1200 { font-size: 1rem * $scale-factor; line-height: 150% }
+    .heading-3-w1200 { font-size: 1rem * pow($scale-factor, 2); line-height: 120% }
+    .heading-4-w1200 { font-size: 1rem * pow($scale-factor, 3); line-height: 120% }
+    .heading-5-w1200 { font-size: 1rem * pow($scale-factor, 4); line-height: 120% }
+    .heading-6-w1200 { font-size: 1rem * pow($scale-factor, 5); line-height: 110% }
+  }
+  
+  /*
+   * Reset
+   */
+  
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, header, article, blockquote, figure, button, form {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: $increment * 2;
+  }
+  
+  ol ol, ul ul, ul ol, ol ul, li table {
+    margin-top: $increment * 2;
+  }
+  
+  .content {
+    h2:not(:first-child), h3, h4, h5, h6 {
+      margin-top: $increment * 3;    
+    }
+  
+    figure, blockquote, .disruptor {
+      margin-top: $increment * 4;
+      margin-bottom: $increment * 4;
+    }
+  }

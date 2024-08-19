@@ -1,0 +1,29 @@
+<div class="article-grid">
+    {% for item in site.case_studies %}
+        
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        
+        {% if thecycle == 'odd' %}
+            <div class="row">
+        {% endif %}
+        
+        <div class="col s12 m10 offset-m1 l6">
+            <a href="/case-studies/{{ item.slug }}" class="link-contains-card">
+                <div class="card white">
+                    <article class="card-content">
+                        <h3 class="card-title">{{ item.title }}</h3>
+                        <p>{{ item.description }}</p>
+                    </article>
+                    <div class="card-action">
+                        <span>View case study</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        {% if thecycle == 'even' or forloop.last %}
+            </div>
+        {% endif %}
+
+    {% endfor %}
+</div>
