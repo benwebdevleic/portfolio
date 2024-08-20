@@ -8,7 +8,7 @@
         {% endif %}
         
         <div class="col s12 m10 offset-m1 l6">
-            <a href="/case-studies/{{ item.slug }}" class="link-contains-card">
+            <a href="{{ item.url | relative_url }}" class="link-contains-card">
                 <div class="card white">
                     <article class="card-content">
                         <h3 class="card-title">{{ item.title }}</h3>

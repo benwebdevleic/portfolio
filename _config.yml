@@ -5,3 +5,8 @@ collections:
   case_studies:
     output: true
     permalink: /case-studies/:path
+relative_links:
+  enabled: true
+  collections: true
+plugins:
+  - jekyll-relative-links
