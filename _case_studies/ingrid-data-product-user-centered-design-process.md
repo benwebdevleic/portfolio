@@ -39,7 +39,7 @@ group passing technique - you write the start of an idea on a post-it and then m
 next person’s post-it and add something to the idea. You keep going until you get back round
 to your original idea and see how it evolved.
 
-![Group passing technique carried out remotely](/assets/images/group-passing-technique-remote.png)
+![Group passing technique carried out remotely]({{ "/assets/images/group-passing-technique-remote.png" | relative_url }})
 
 The workshop went smoothly, was enjoyed by the team and we produced 18 different ideas!
 The team were buzzing afterwards, as they’d gone from feeling all was lost to having some
@@ -62,14 +62,14 @@ a list of the courses graduates studied who aspired to become mechanical enginee
 Knowing this would enable employers to target their marketing at students taking those
 courses.
 
-![Gradspire screenshot](/assets/images/gradspire-screenshot.png)
+![Gradspire screenshot]({{ "/assets/images/gradspire-screenshot.png" | relative_url }})
 
 ### Prototype 2 - INGRID
 
 A traditional BI platform in which you can create custom dashboards using student data from
 large datasets.
 
-![INGRID screenshot](/assets/images/ingrid-screenshot.png)
+![INGRID screenshot]({{ "/assets/images/ingrid-screenshot.png" | relative_url }})
 
 ## Assumptions gathering
 
@@ -78,7 +78,7 @@ team using bingo cards, to find out what the team expected to hear in the feedba
 this to be an effective way to get the team invested in the testing and thinking objectively
 going into it.
 
-![Assumptions gathering bingo cards](/assets/images/assumptions-gathering-bingo-cards.png)
+![Assumptions gathering bingo cards]({{ "/assets/images/assumptions-gathering-bingo-cards.png" | relative_url }})
 
 ## Concept testing
 
@@ -99,14 +99,14 @@ find things that were relevant to them.
 We pulled our notes out into an affinity map to help us gain a holistic view of the feedback
 about the concepts.
 
-![Affinity map](/assets/images/affinity-map.png)
+![Affinity map]({{ "/assets/images/affinity-map.png" | relative_url }})
 
 ## User needs/requirements
 
 We also learnt something about the users through our conversations with them, so we
 captured user needs as well.
 
-![User requirements](/assets/images/user-requirements.png)
+![User requirements]({{ "/assets/images/user-requirements.png" | relative_url }})
 
 ## Product requirements
 
@@ -114,7 +114,7 @@ Seeing both the concept feedback and user needs helped us to define product
 requirements. This enabled us to frame what the product needed to do for users, directly
 linking each requirement back to a user need.
 
-![Product requirements](/assets/images/ingrid-product-requirements.png)
+![Product requirements]({{ "/assets/images/ingrid-product-requirements.png" | relative_url }})
 
 ## Concept statement
 
@@ -122,7 +122,7 @@ To wrap-up the project, we turned what we’d learnt and validated into a concep
 a sort of elevator pitch that explained what the product would do, who it was for and what
 problems it solved.
 
-![Concept statement](/assets/images/ingrid-concept-statement.png)
+![Concept statement]({{ "/assets/images/ingrid-concept-statement.png" | relative_url }})
 
 ## Bonus
 
@@ -132,7 +132,7 @@ Just to double check we were confident with the outcome, we ran the product conc
 through the Product Death Flow, a checklist I put together to make sure we focussed on
 discovering a product with high user value and commercial value.
 
-![Product Death Flow](/assets/images/product-death-flow.png)
+![Product Death Flow]({{ "/assets/images/product-death-flow.png" | relative_url }})
 
 There was a shared feeling of joy and accomplishment across the team when we successfully
 made it to the end!
@@ -144,7 +144,7 @@ funeral for Gradspire, to help the team celebrate the fact we’d tried somethin
 work. I hoped that this would also prevent people in the future trying to pursue ideas from it
 that had already been proven to be of little to no value.
 
-![Product funeral](/assets/images/product-death-certificate.png)
+![Product funeral]({{ "/assets/images/product-death-certificate.png" | relative_url }})
 
 This was a moment of delight for the team and lead to requests to hold funerals for other
 failed product ideas in the future.

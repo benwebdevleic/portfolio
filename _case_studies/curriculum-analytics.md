@@ -13,7 +13,7 @@ This was a known problem that Universities shared with us, they had engagement d
 
 The Product Owner had an idea they wanted to try. It was a table with a row for each course module and in each of the columns to the right was a stacked bar graph denoting the level of engagement with each measure.
 
-![The Product Owner's drawing of their idea](/assets/images/curriculum-analytics-po-idea-design.png)
+![The Product Owner's drawing of their idea]({{ "/assets/images/curriculum-analytics-po-idea-design.png" | relative_url }})
 
 We ran with the idea, making sure throughout that it was their vision we were helping them to explore, rather than something UX were taking ownership of.
 
@@ -49,7 +49,7 @@ This had also helped to show the organisation in a positive light as users could
 
 Feeling more confident with the product idea, we committed to producing a high-fidelity version with a few changes we felt would resolve some of the outstanding issues from the concept testing.
 
-![Curriculum Analytics high fidelity design](/assets/images/curriculum-analytics-high-fidelity-design.png)
+![Curriculum Analytics high fidelity design]({{ "/assets/images/curriculum-analytics-high-fidelity-design.png" | relative_url }})
 
 I used an 8 point soft grid throughout, which helped to keep the design consistent. Material Design components were also heavily utilised as at the time this was the UI library the organisation choose to use for most of their products.
 

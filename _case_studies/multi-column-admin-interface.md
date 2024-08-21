@@ -18,7 +18,7 @@ To make it possible to arrange content in columns, the content team needed an in
 
 The application already had components to enter headings, text, images, etc. so I intended to create a multi-column component which would present these existing components in columns.
 
-![The multi-column admin component](/assets/images/multi-column-admin-component-001.png)
+![The multi-column admin component]({{ "/assets/images/multi-column-admin-component-001.png" | relative_url }})
 
 As this was intended for power-users, I opted to make the new interface familiar to them; using interaction styles that were consistent with other components already in the admin interface.
 
@@ -76,7 +76,7 @@ Only minor tweaks were needed to the prototype and the component was deemed suit
 
 To handover to the developers, I produced a design document which demonstrated how the component behaved when the user performed certain actions.
 
-![An example from the design document](/assets/images/multi-column-adding-new-block-in-certain-position-in-the-column.jpg)
+![An example from the design document]({{ "/assets/images/multi-column-adding-new-block-in-certain-position-in-the-column.jpg" | relative_url }})
 
 I went through each action with the developers using the prototype, so they could see it in person as well as refer to the design document.
 
