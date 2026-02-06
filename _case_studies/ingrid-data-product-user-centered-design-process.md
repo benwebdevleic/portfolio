@@ -2,8 +2,9 @@
 layout: case_study
 title: "INGRID data product"
 description: "Leading a team of stakeholders through the User-Centered Design process to define a data product for graduate employers."
+order: 1
 ---
-## Background
+## 📖 Background
 
 The work outlined in this case study was part of a project to explore how student/graduate
 data could be used by employers seeking to discover graduates when hiring.
@@ -17,7 +18,7 @@ Medium-Sized Enterprises (SMEs) and larger-sized enterprises as well as a handfu
 graduates. We’d gained an understanding of their recruitment processes and had uncovered
 problems/needs that were common across most interviewees.
 
-## Problem statements
+## ⚠️ Problem statements
 
 These two problems stood out:
 
@@ -28,7 +29,7 @@ our teams.”*
 attract high quality candidates. Some courses are more obvious for certain roles, but not
 knowing the courses on the fringe mean we’re missing opportunities to hire great talent.”*
 
-## Ideation
+## ✨ Ideation
 
 At this point in the project the team had a clear understanding of the challenges users faced
 and it felt appropriate to start solutionising, but the team were struggling to come up with
@@ -45,7 +46,7 @@ The workshop went smoothly, was enjoyed by the team and we produced 18 different
 The team were buzzing afterwards, as they’d gone from feeling all was lost to having some
 exciting new ideas to try.
 
-## Prototyping
+## ✏️ Prototyping
 
 We narrowed the ideas down to 2 that we felt had the greatest potential, considering
 technical feasibility, value to the user, effort to implement and commercial value. Then we
@@ -71,7 +72,7 @@ large datasets.
 
 ![INGRID screenshot]({{ "/assets/images/ingrid-screenshot.png" | relative_url }})
 
-## Assumptions gathering
+## 🤔 Assumptions gathering
 
 Prior to concept testing the prototypes, I did a quick assumptions gathering exercise with the
 team using bingo cards, to find out what the team expected to hear in the feedback. I found
@@ -80,7 +81,7 @@ going into it.
 
 ![Assumptions gathering bingo cards]({{ "/assets/images/assumptions-gathering-bingo-cards.png" | relative_url }})
 
-## Concept testing
+## 🔬 Concept testing
 
 I carried out 1-2-1 interviews remotely using MS Teams with our pool of participants, with
 members of the team observing and taking notes.
@@ -94,21 +95,21 @@ before as you’re trying to fill specific gaps in your knowledge, but for these
 worked quite well, as there was quite a lot of data in each one and it allowed the users to
 find things that were relevant to them.
 
-## Research analysis
+## 📊 Research analysis
 
 We pulled our notes out into an affinity map to help us gain a holistic view of the feedback
 about the concepts.
 
 ![Affinity map]({{ "/assets/images/affinity-map.png" | relative_url }})
 
-## User needs/requirements
+## 🗣️ User needs/requirements
 
 We also learnt something about the users through our conversations with them, so we
 captured user needs as well.
 
 ![User requirements]({{ "/assets/images/user-requirements.png" | relative_url }})
 
-## Product requirements
+## 📋 Product requirements
 
 Seeing both the concept feedback and user needs helped us to define product
 requirements. This enabled us to frame what the product needed to do for users, directly
@@ -116,7 +117,7 @@ linking each requirement back to a user need.
 
 ![Product requirements]({{ "/assets/images/ingrid-product-requirements.png" | relative_url }})
 
-## Concept statement
+## 📜 Concept statement
 
 To wrap-up the project, we turned what we’d learnt and validated into a concept statement,
 a sort of elevator pitch that explained what the product would do, who it was for and what

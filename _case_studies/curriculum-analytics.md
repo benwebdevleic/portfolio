@@ -2,14 +2,15 @@
 layout: case_study
 title: "Curriculum analytics"
 description: "A project to design a tool to measure the engagement of University course modules."
+order: 2
 ---
-## What were we asked to do?
+## 🙋🏻‍♂️ What were we asked to do?
 
 A Product Owner wanted to explore how we could help Universities to understand which course modules weren't engaging students as well as they would like.
 
 This was a known problem that Universities shared with us, they had engagement data but didn't know how best to visualise it, to make it actionable. 
 
-## Hypothesis
+## 🧪 Hypothesis
 
 The Product Owner had an idea they wanted to try. It was a table with a row for each course module and in each of the columns to the right was a stacked bar graph denoting the level of engagement with each measure.
 
@@ -17,7 +18,7 @@ The Product Owner had an idea they wanted to try. It was a table with a row for 
 
 We ran with the idea, making sure throughout that it was their vision we were helping them to explore, rather than something UX were taking ownership of.
 
-## Concept testing 
+## 🔬 Concept testing 
 
 I put together a testable mock-up, which was a low fidelity wireframe with a little more detail than the original concept.
 
@@ -27,7 +28,7 @@ There were a number of problems with it - what was the threshold for poor engage
 
 There were also accessibility issues - solely using colour to communicate information would make this inaccessible to those with colour blindness. We knew this from the start but it was important for the Product Owner to be part of the journey and see this issue for themselves.
 
-## Ideation workshop
+## ✨ Ideation workshop
 
 To explore other ideas we worked with the Product Owner to produce an in-person design workshop with his development team, including QA testers, scrum master and the head of development.
 
@@ -35,7 +36,7 @@ We provided a skeleton template and tasked participants with coming up with as m
 
 We introduced them to crazy 8 sketching, provided them with the materials they'd need and collectively they came up with over 70 ideas.
 
-## Concept creation
+## ✏️ Concept creation
 
 Following the design workshop we selected 3 different ideas to try out, including one that the Product Owner was keen on.
 
@@ -45,7 +46,7 @@ This time we were much closer to something that would work well for users. We'd 
 
 This had also helped to show the organisation in a positive light as users could see they were being listened to and things were progressing in the right direction.
 
-## High fidelity design
+## 🎨 High fidelity design
 
 Feeling more confident with the product idea, we committed to producing a high-fidelity version with a few changes we felt would resolve some of the outstanding issues from the concept testing.
 

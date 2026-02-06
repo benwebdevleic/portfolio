@@ -2,8 +2,9 @@
 layout: case_study
 title: "TechRadar.com review template"
 description: "Discovery research to define an improved product review template"
+order: 5
 ---
-## Background
+## 📖 Background
 
 The business chose to re-platform all of its premium sites so that each site could be maintained
 much more effectively through a single platform. In turn, this meant that the business could share the same infrastructure across the sites and reduce running costs.
@@ -13,12 +14,12 @@ standardised layouts that could be used for all sites. For example, a review of 
 TechRadar and a review of a coffee machine on T3 would both need to use the same review
 template.
 
-## Goal
+## 🎯 Goal
 
 Produce a responsive review template for product reviews, which can be used for multiple types
 of product.
 
-## Approach
+## 📝 Approach
 
 No previous insights existed about user needs within the business, other than secondary
 information found online. Previously the business had assumptions and speculation which led
@@ -26,12 +27,12 @@ their decision making.
 
 With so many sites offering product reviews which included so much information about products, I needed to optimise the information we displayed so we only included information that was useful/relevant to users. I also needed to understand which bits of product information should be shown at different parts of the template, based on user priorities.
 
-## Competitive analysis
+## 👨🏻‍💻 Competitive analysis
 
 Looking at the review layouts of competitor sites gave me an understanding of the kind of
 information and aesthetic that people expect to see when they visit a product review site.
 
-## Mock-up
+## 🎨 Mock-up
 
 I put together a mock-up of the potential layout by building a custom Javascript library which
 allowed us to make a responsive mock-up with relative ease. It was based on the information
@@ -40,7 +41,7 @@ the business.
 
 This mock-up acted as a starting point which I could iterate on following user research.
 
-## In-depth interviews, including a card sort task
+## 👥 In-depth interviews, including a card sort task
 
 I conducted guerilla-style user research interviews in a cafe. To find user interview candidates we hired a temp for a day, through a local recruitment agency, who approached members of the
 public, armed with a clipboard and a series of screener questions.
@@ -59,7 +60,7 @@ which very quickly identified where it lacked important information. This sectio
 using a laptop with a webcam, and I used Camtasia to get a screen recording, audio recording
 and recording of the user in a single video.
 
-## Summary and reporting
+## 🏁 Summary and reporting
 
 I grouped the responses users’ gave into:
 
@@ -81,7 +82,7 @@ explain the findings and show the final mock-up and design. This gave the develo
 opportunity to understand users’ needs to give context to why the template would be built in
 such a way.
 
-## Outcome
+## 💥 Outcome
 
 The outcome of this project was that the business gained valuable insight into user needs and a
 user-centered review template. By focussing on showing information that was needed by users
