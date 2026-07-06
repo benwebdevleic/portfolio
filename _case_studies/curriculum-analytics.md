@@ -2,7 +2,8 @@
 layout: case_study
 title: "Curriculum analytics"
 description: "A project to design a tool to measure the engagement of University course modules."
-order: 2
+order: 3
+published: true
 ---
 ## 🙋🏻‍♂️ What were we asked to do?
 

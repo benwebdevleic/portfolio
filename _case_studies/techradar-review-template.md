@@ -2,7 +2,8 @@
 layout: case_study
 title: "TechRadar.com review template"
 description: "Discovery research to define an improved product review template"
-order: 5
+order: 6
+published: true
 ---
 ## 📖 Background
 

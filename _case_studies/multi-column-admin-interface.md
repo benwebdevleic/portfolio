@@ -2,7 +2,8 @@
 layout: case_study
 title: "Multi-column admin interface"
 description: "Designing and usability testing a prototype admin interface."
-order: 3
+order: 4
+published: true
 ---
 ## 📖 Background
 

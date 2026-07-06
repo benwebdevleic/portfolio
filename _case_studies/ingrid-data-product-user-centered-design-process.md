@@ -3,6 +3,7 @@ layout: case_study
 title: "INGRID data product"
 description: "Leading a team of stakeholders through the User-Centered Design process to define a data product for graduate employers."
 order: 1
+published: true
 ---
 ## 📖 Background
 

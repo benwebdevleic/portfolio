@@ -2,7 +2,8 @@
 layout: case_study
 title: "Customer support website"
 description: "Designed, tested and delivered a customer support website for a suite of native apps"
-order: 4
+order: 5
+published: true
 ---
 ## 📖 Background
 
@@ -10,7 +11,11 @@ This project was carried out a publishing company that produced digital magazine
 
 ## ⚠️ Problem
 
-Customers were contacting support trying to resolve issues that could easily be resolved in the app. Support was handled by a third-party company who would often take several days to respond, exacerbating the problem. Customers were left feeling frustrated and the business was being billed for every support request.
+Customers were contacting support trying to resolve issues that could easily be resolved in the app.
+
+Support was handled by a third-party company who would often take several days to respond, exacerbating the problem. Customers were left feeling frustrated by their poor experience with support and would cancel their subscription.
+
+The business was being billed for every support request handled, regardless of outcome and were therefore paying for poor quality support.
 
 ## 🎯 Goal
 
