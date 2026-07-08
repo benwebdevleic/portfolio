@@ -1,8 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Ben Harvey | UX Researcher & Designer" # the name of your site, e.g. ACME Corp.
+title: "Ben Harvey | Senior UX Researcher" # the name of your site, e.g. ACME Corp.
 name: "Ben Harvey"
-description: "UX Researcher & Designer"
+description: "Senior UX Researcher"
 collections:
   case_studies:
     output: true
