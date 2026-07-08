@@ -2,101 +2,65 @@
 layout: case_study
 title: "TechRadar.com review template"
 description: "Discovery research to define an improved product review template"
-order: 6
+order: 3
 published: true
 ---
 ## 📖 Background
 
-The business chose to re-platform all of its premium sites so that each site could be maintained
-much more effectively through a single platform. In turn, this meant that the business could share the same infrastructure across the sites and reduce running costs.
+The business chose to re-platform all of its premium sites so each could be maintained far more effectively through a single platform, sharing infrastructure across sites and reducing running costs.
 
-Previously, each of the sites were built using unique layouts, so the business needed to produce
-standardised layouts that could be used for all sites. For example, a review of a smartphone on
-TechRadar and a review of a coffee machine on T3 would both need to use the same review
-template.
+Previously, each site had been built with unique layouts, so the business needed standardised layouts that could work across all of them. A review of a smartphone on TechRadar and a review of a coffee machine on T3, for example, would need to share the same underlying review template.
 
 ## 🎯 Goal
 
-Produce a responsive review template for product reviews, which can be used for multiple types
-of product.
+Produce a responsive review template for product reviews, usable across multiple product types.
 
 ## 📝 Approach
 
-No previous insights existed about user needs within the business, other than secondary
-information found online. Previously the business had assumptions and speculation which led
-their decision making.
+There was no existing user insight to draw on within the business beyond secondary research found online — decisions up to this point had been driven by assumption and speculation rather than evidence, and I saw establishing a research-led foundation as a core part of what this project needed to deliver.
 
-With so many sites offering product reviews which included so much information about products, I needed to optimise the information we displayed so we only included information that was useful/relevant to users. I also needed to understand which bits of product information should be shown at different parts of the template, based on user priorities.
+With review pages across the business carrying a large amount of product information, I set out to identify which information was actually useful to users, and to understand how that priority should shape what appeared where in the template — rather than treating "more information" as inherently better.
 
 ## 👨🏻‍💻 Competitive analysis
 
-Looking at the review layouts of competitor sites gave me an understanding of the kind of
-information and aesthetic that people expect to see when they visit a product review site.
+I reviewed competitor review layouts to understand the kind of information and visual conventions users would already expect when landing on a product review site, giving me a baseline to test against rather than starting from a blank page.
 
 ## 🎨 Mock-up
 
-I put together a mock-up of the potential layout by building a custom Javascript library which
-allowed us to make a responsive mock-up with relative ease. It was based on the information
-gathered from the competitive analysis and the knowledge provided by the editorial teams within
-the business.
+I built a custom JavaScript library to produce a responsive mock-up of the layout with relative ease, drawing on both the competitive analysis and domain knowledge from the editorial teams.
 
-This mock-up acted as a starting point which I could iterate on following user research.
+This wasn't intended as a finished design — I treated it explicitly as a working hypothesis, built specifically to be pressure-tested and iterated on through user research rather than refined in isolation.
 
 ## 👥 In-depth interviews, including a card sort task
 
-I conducted guerilla-style user research interviews in a cafe. To find user interview candidates we hired a temp for a day, through a local recruitment agency, who approached members of the
-public, armed with a clipboard and a series of screener questions.
+I designed and ran a guerrilla-style research study in a cafe. To reach a varied pool of participants quickly, I arranged for a temp recruited through a local agency to approach members of the public with a set of screener questions I'd written, armed with a clipboard.
 
-In the first part of each session, users was asked a few questions about their phone purchase, to
-give us some understanding of what each person wanted from a smartphone.
+Each session opened with a few questions about the participant's most recent phone purchase, giving me context on what they valued in a smartphone before testing anything.
 
-Each user took part in a card sort task, which involved them deciding the 5 most important bits of
-information they needed to know in order to decide whether the phone was worth purchasing or
-not. They also chose the 5 least useful bits of information, which enabled me to understand what
-wasn’t important to them.
+I then ran a card sort task, asking each participant to identify the five most important pieces of information they'd need to decide whether a phone was worth buying, and separately the five least useful — giving me a clear read on both what mattered and what didn't, rather than just a single ranked list.
 
-Users were then shown the mock-up and asked a series of questions. They were also asked to
-point out the 5 most important bits of information that they had previously chosen in the mock-up,
-which very quickly identified where it lacked important information. This section was carried out
-using a laptop with a webcam, and I used Camtasia to get a screen recording, audio recording
-and recording of the user in a single video.
+Participants were then shown the mock-up and asked to locate the five pieces of information they'd just told me were most important. This surfaced, very quickly, exactly where the design was failing to serve their priorities. I ran this part of the session on a laptop with a webcam, using Camtasia to capture screen activity, audio, and the participant on video simultaneously — giving me a complete record to draw on during analysis.
 
 ## 🏁 Summary and reporting
 
-I grouped the responses users’ gave into:
+I coded participant responses into four categories — positives, negatives, observations, and recommendations — to keep the analysis structured and comparable across sessions.
 
-* Positives
-* Negatives
-* Observations
-* Recommendations
-
-For the card sort task, I attached a score for each placement e.g. 5 points for the most important
-card, 1 for the 5th most important card and inverted the scoring for the least useful cards. I then totalled up the scores from every session, which resulted in a prioritised list:
+For the card sort task, I built a scoring system: 5 points for the most important card down to 1 for the fifth, with an inverted scale applied to the least-useful cards. Totalling scores across every session produced a clear, prioritised list of what users actually needed to see:
 
 ![Card sort results]({{ "/assets/images/card-sort-results.png" | relative_url }})
 
-Following the user testing, I made refinements to the mock-up based on the insights learned. The
-UI Designer in the team produced a design for the template using the mock-up that I had created.
+I used these findings to refine the mock-up, which the UI Designer then took forward into the final template design.
 
-I held a session with the development team, Tech Lead and Product Lead and UI Designer to
-explain the findings and show the final mock-up and design. This gave the development team an
-opportunity to understand users’ needs to give context to why the template would be built in
-such a way.
+I then ran a session with the development team, Tech Lead, Product Lead, and UI Designer to walk through the findings and the resulting design — giving the development team the user context behind *why* the template needed to be built the way it was, not just a spec to implement.
 
 ## 💥 Outcome
 
-The outcome of this project was that the business gained valuable insight into user needs and a
-user-centered review template. By focussing on showing information that was needed by users
-and almost more importantly not needed, the new template had a lot less clutter than the
-previous iteration.
+This project gave the business its first real evidence base for review page design, and delivered a user-centred template as a result. By deliberately excluding information users had told us they didn't need — arguably as important a decision as what to include — the new template carried significantly less clutter than its predecessor.
 
-During an analytical phase which followed the delivery of the platform, engagement was
-maintained and increased in some sections of the site.
+In the analytics phase following launch, engagement held steady and increased in some sections of the site.
 
-The biggest benefits were seen on mobile devices; the re-designed layout was much more
-user-friendly compared to the previous version, which used to be on a separate
-‘m.techradar.com’ platform:
+The clearest gains were on mobile: the redesigned layout was a substantial improvement on the previous experience, which had lived on a separate `m.techradar.com` platform:
 
 ![Refreshed TechRadar]({{ "/assets/images/refreshed-techradar.png" | relative_url }})
 
-This project gave focus to the development team and the rest of the business. I went over and above my role to break down the template into development tasks in JIRA and wrote a spec for each task. When I discussed this with the development team after the template had been produced, it was well received and the level of detail provided became a standard for development tasks which followed.
+Beyond the design itself, this project gave the wider development team a clearer sense of direction. I took the initiative to break the template down into individual JIRA development tasks and wrote a spec for each one myself — going beyond what the role strictly required. That level of detail was well received by the development team, and it went on to become the standard expected of spec-writing for tasks that followed.

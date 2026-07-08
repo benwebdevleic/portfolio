@@ -2,20 +2,20 @@
 layout: case_study
 title: "Customer support website"
 description: "Designed, tested and delivered a customer support website for a suite of native apps"
-order: 5
+order: 6
 published: true
 ---
 ## 📖 Background
 
-This project was carried out a publishing company that produced digital magazines, which were readable through dedicated iOS and Android apps. There were a number of bugs being worked on by the development team and it was taking a while to resolve them. In response, the company felt that a support website would help as a stop-gap for customers to resolve problems themselves while the development team worked to improve the apps.
+This project was carried out for a publishing company producing digital magazines, read through dedicated iOS and Android apps. The development team had a backlog of bugs they were working through, and resolving them was taking time. In response, the business wanted a support website as a stop-gap — somewhere customers could resolve issues themselves while the apps were improved.
 
 ## ⚠️ Problem
 
-Customers were contacting support trying to resolve issues that could easily be resolved in the app.
+Customers were contacting support to resolve issues that could easily have been solved within the app itself.
 
-Support was handled by a third-party company who would often take several days to respond, exacerbating the problem. Customers were left feeling frustrated by their poor experience with support and would cancel their subscription.
+Support was outsourced to a third party who often took several days to respond, which compounded the problem. Customers were left frustrated by the experience and, in some cases, cancelled their subscriptions as a result.
 
-The business was being billed for every support request handled, regardless of outcome and were therefore paying for poor quality support.
+The business was also billed per support request regardless of outcome, so it was paying a premium for a support experience that was actively damaging retention.
 
 ## 🎯 Goal
 
@@ -23,36 +23,36 @@ Reduce the number of support tickets raised.
 
 ## 🤔 What did we do?
 
-The key stakeholder involved in this project opted for a common solution to this problem in a bid to not reinvent the wheel; provide a support website containing instructional articles that customers could use to solve common issues.
+The key stakeholder favoured a well-established solution rather than reinventing the wheel: a support website with instructional articles customers could use to resolve common issues themselves. I took this as the starting brief, but treated the detail of how it should work as something to establish through research rather than assumption.
 
 ## 👨🏻‍💻 Competitor analysis
 
-We looked at a number of other support systems to understand typical functionality and sketched out howwe would like our site to be arranged. These included components like most viewed articles, browse by category and a search feature.
+I reviewed a number of existing support systems to understand typical functionality and patterns, then sketched out how I thought our site should be structured. This shaped the core components — most-viewed articles, browse by category, and search — as the backbone of the design.
 
 ## 🎨 Prototype
 
-Using the sketches I made a mid-fidelity prototype as a Jekyll static site. This took a few days to build, which is longer than it would typically take to produce a prototype in Figma, but it gave us a chance to experiment with some interactive elements and the search feature.
+Working from the sketches, I built a mid-fidelity prototype as a Jekyll static site rather than in Figma. That decision took a few extra days upfront, but it was a deliberate trade-off: it let us test real interactive behaviour, particularly the search feature, rather than relying on a simulated version that might have hidden usability issues until launch.
 
 ![Gardeners World support website prototype]({{ "/assets/images/gw-support.png" | relative_url }})
 
 ## 🔎︎ Usability testing
 
-We then carried out some usability testing to capture any glaring problems we hadn’t spotted. Every participant was a member of staff who had no affiliation to the team or product.
+I designed and ran a round of usability testing to catch problems we hadn't anticipated, recruiting participants who were staff members with no affiliation to the team or product, to keep results unbiased by familiarity with it.
 
-What we learnt was fascinating. There were some really key parts of the user flow we’d designed that people didn’t see, primarily the list of most viewed articles, which had the answer to the problem we’d set users during testing.
+The findings were revealing. Several key parts of the flow went unnoticed by participants — most significantly the most-viewed articles list, which held the answer to the task we'd set them.
 
-One user who had a diagnosis of dyslexia explained that they dismissed the links because it was difficult to distinguish between them. They just saw a blob of blue colour and moved on down the page. We’d take out the bullets at the beginning of each list item, believing this could bring the beginning of the sentance closer to the left hand edge and making it quicker to parse. But we’d accidentally made the links more difficult to read! Simply putting the bullets back in made this section significantly better for usability.
+One participant with a dyslexia diagnosis explained that the links were hard to distinguish from one another; they registered only as a block of blue and were skipped over. We'd removed the bullet points at the start of each list item, on the assumption that pulling text closer to the left edge would make it faster to scan — but the change had made the links harder to parse, not easier. Reinstating the bullets resolved the issue immediately. It was a useful reminder that a plausible design rationale still needs to be checked against how real users actually read the page.
 
 ## 💅🏻 Refinements
 
-We made changes to the prototype on the back of usability testing and ended up using it as the finished product. People made comments during testing like “it looks functional, but it needs to be”. Emphasising that this product was about the customer finding the right information quickly, not entertaining them.
+I revised the prototype based on what testing surfaced, and it went on to become the finished product. Participant feedback during testing — comments like "it looks functional, but it needs to be" — reinforced the core design principle I was working to: this was a tool for finding the right information quickly, not a product to be admired.
 
-We added the ability to brand the site based on which digital magazine app you’d come from. The magazine logo would appear at the top and buttons, etc. would all use branded colours. Information about the device and app version, etc. would also be passed through to the raise a ticket form to save time going back and forth with support.
+I also built in the ability to brand the site dynamically depending on which magazine app a customer had arrived from, surfacing the relevant logo and brand colours, and passed device and app version data straight through to the "raise a ticket" form to remove unnecessary back-and-forth with support.
 
 ## 🏁 Conclusion
 
-In 3 months we’d designed, usability tested and built a fully working support website, with some very handy features that would hopefully help customers to resolve problems themselves and provide a smooth journey when they needed further help.
+Within three months, I'd taken the project from research through to a fully working, usability-tested support website, with features designed to help customers self-serve and to smooth the journey when they still needed help.
 
-The aim was to reduce the number of support tickets created and strangely the number of tickets didn’t significantly reduce. I later learnt that our customers chose to speak to someone when seeking help, rather than make the effort to find the information themselves because of the perceived effort. Having someone simply tell them which buttons to press felt like a much friendlier and effective way to resolve a problem.
+The original goal was to reduce support ticket volume, and — notably — it didn't move significantly. Through follow-up conversations, I learned that customers largely preferred speaking to a person over finding the answer themselves; being told which buttons to press felt easier and more reassuring than the effort of searching, even when the information was readily available.
 
-This likely isn’t the case for every audience and if I were to do this project again I would have opted to speak to customers about their experiences with support before diving in with a common approach.
+That's a useful finding in its own right, and I don't think it generalises to every audience. If I ran this project again, I'd build in research with customers about their existing support expectations and behaviours before committing to a "common approach" solution, rather than validating the approach only after it had been built.

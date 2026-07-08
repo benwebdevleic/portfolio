@@ -2,7 +2,7 @@
 layout: case_study
 title: "Radio Times Puzzles"
 description: "Turning around a failing new product"
-order: 2
+order: 4
 published: true
 ---
 

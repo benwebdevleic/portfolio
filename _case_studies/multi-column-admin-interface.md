@@ -2,64 +2,60 @@
 layout: case_study
 title: "Multi-column admin interface"
 description: "Designing and usability testing a prototype admin interface."
-order: 4
+order: 2
 published: true
 ---
 ## 📖 Background
 
-In this project I created and usability tested a prototype content component for power-users of a publishing company's in-house Content Management System (CMS).
+In this project I designed, prototyped, and usability tested a content component for power-users of a publishing company's in-house Content Management System (CMS).
 
-Prior to this part of the project we'd carried out some visual preference testing for a digital magazine app and discovered that displaying content in multiple columns was viewed favourably by subscribers.
+This built on earlier visual preference testing I'd carried out for a digital magazine app, which had shown that subscribers responded well to content displayed in multiple columns.
 
-It gave people a break from reading content in a single column and made the layout more visually interesting. One user described it as being "a bit like a game" because you could choose which column you'd like to read first.
+It gave readers a break from a single-column layout and made the experience more visually engaging — one participant described it as being "a bit like a game," since you could choose which column to read first.
 
-To make it possible to arrange content in columns, the content team needed an interface within the CMS.
+To make multi-column layouts achievable for the content team, I identified that they'd need a dedicated interface within the CMS to support it.
 
 ## 🎨 Prototype
 
-The application already had components to enter headings, text, images, etc. so I intended to create a multi-column component which would present these existing components in columns.
+The CMS already had components for entering headings, text, and images, so I designed a multi-column component that would arrange these existing components into columns rather than duplicating functionality that already worked well.
 
 ![The multi-column admin component]({{ "/assets/images/multi-column-admin-component-001.png" | relative_url }})
 
-As this was intended for power-users, I opted to make the new interface familiar to them; using interaction styles that were consistent with other components already in the admin interface.
+Since this was built for power-users, I made a deliberate choice to keep the interaction patterns consistent with the rest of the admin interface, prioritising familiarity over introducing a novel interaction model they'd have to relearn.
 
-Columns aligned to a 12-column grid and I wanted the user to be able to choose how many columns were displayed and how wide each column was, so you could create some really interesting and engaging layouts.
+Columns aligned to a 12-column grid, and I designed the interface so users could control both the number of columns and the width of each, giving them room to create genuinely varied layouts. I designed the controls for resizing, adding, and removing columns as part of that same system.
 
-I'd designed buttons to let you resize each column, remove columns and add new columns.
-
-I produced a testable prototype using VueJS in 2 days, which was fully interactive in the browser. I had a dev version of the CMS running locally on my laptop (with some help from one of the developers) and with a bit of tinkering got it working with real content.
+I built a fully interactive, testable prototype in VueJS in two days, running against a development version of the CMS on my laptop (with support from one of the developers to get it wired up), which let me test the component against real content rather than placeholder data.
 
 ## 🔎︎ Usability testing
 
-To usability test the prototype, I shadowed a member of the content team. Their job was to turn articles from the print version of magazines (PDFs) into digital magazine articles (HTML), using the CMS. Their process was to start with a crude import of each article from a magazine issue and make formatting improvements, using the PDF version to guide them. When each article was ready the issue could be published.
+To test it, I shadowed a member of the content team as they carried out their normal workflow — converting print magazine articles (PDF) into digital HTML articles via the CMS, starting from a crude import and refining formatting against the original layout before publishing.
 
-So I setup a crude import of one article and asked them to get it ready to be published, with the only criteria that one particular section of the article was arranged in 3 columns to match the print layout.
+I set up a crude import of one article and asked them to prepare it for publication, with a single constraint: one section needed to be arranged in three columns to match the print layout. This let me observe the component under a realistic task rather than an artificial one.
 
-The user was able to format the article, but there were a number of problems with the multi-column component.
+The user was able to complete the task, but the session surfaced several clear problems with the component.
 
 ### 🐌 Getting content into a column was slow
 
-The user had to drag and drop content from above or below the component to add it to one of the columns. Scrolling up and down, moving each bit of content at a time was a slow, fiddly process and it took a long time for users to get all of the content into the component.
+Content had to be dragged and dropped into a column from elsewhere on the page. Scrolling and repositioning content piece by piece made this a slow, fiddly process that took the user longer than it should have to populate the component.
 
 ### ⏳ Adding a column was time-consuming
 
-To add a column, there needed to be enough space to begin with, meaning you had to reduce the existing column widths before adding the new one. This wasn't obvious and the user wondered why they weren't able to add the column until they figured it out.
-
-Once the new column was added, resizing each column to make them all equal width was fiddly and time-consuming as you had to click on an arrow to button attached to each column. As the column resized by 1 column, the button moved with it, which meant the user had to make an effort to move the mouse a lot when resizing.
+Adding a new column required existing columns to first be narrowed to make space — a dependency that wasn't obvious, and one the user only worked out through trial and error. Once added, resizing columns to equal widths was similarly fiddly: each resize used a button attached to the column, which moved along with it as the column changed size, forcing the user to keep chasing it with the mouse.
 
 ### 👆 Resizing columns - drag, don't click
 
-Users tried to click and drag the arrow buttons to resize columns, as they believed this is what the icons were indicating. It became clear that dragging columns to fit felt like a more natural method of resizing than clicking buttons. It was also faster, as the user would be able to resize by multiple columns at a time.
+Users instinctively tried to click-and-drag the resize buttons, expecting that to be how the icon worked. That observation told me the underlying interaction model was wrong: dragging was the more natural and faster method, since it let users resize by several columns in one motion rather than one click at a time.
 
 ## 🍿 Popcorn session
 
-I wanted the key stakeholder and the developers to see what happened in testing, so in a popcorn session we watched a screen recording showing the user struggle with the component.
+I ran a popcorn session with the key stakeholder and developers, screening a recording of the user working through the component's difficulties, rather than simply reporting the findings second-hand.
 
-At the beginning of the session the key stakeholder stated they thought the component would have already been built by now. By the end, they realised why it hadn't and understood the need to continue to work on it until it was usable.
+The stakeholder opened the session assuming the component was close to finished. By the end, they understood exactly why it wasn't — and the case for continuing to invest in it had made itself.
 
 ## 🛹 Skateboard version
 
-As many of the difficulties were with resizing, adding and removing columns, we decided to simplify the component for the first release, to get something delivered promptly while we figured out the more complex functionality.
+Since most of the friction centred on resizing, adding, and removing columns, I made the call to strip the component back for a first release — getting something usable into production quickly while the more complex interactions were reworked separately.
 
 This skateboard version included:
 
@@ -69,30 +65,28 @@ This skateboard version included:
 - creating new heading, text and image components within columns so content could be copied and pasted instead of slowly dragging and dropping
 {: .browser-default}
 
-I tested the skateboard version with the same member of the content team and it was a significant improvement over the first version. Some stakeholders had also joined the testing, as the project had piqued their interest following the popcorn session.
+I tested this simplified version with the same content team member, and it was a marked improvement. By this point, several other stakeholders had joined the testing off the back of the popcorn session, having become invested in the outcome.
 
-Only minor tweaks were needed to the prototype and the component was deemed suitable for development.
+Only minor refinements were needed after that round, and the component was signed off as ready for development.
 
 ## 🤝🏻 Handover
 
-To handover to the developers, I produced a design document which demonstrated how the component behaved when the user performed certain actions.
+I produced a design document setting out exactly how the component should behave across a range of user actions, to hand over to the development team.
 
 ![An example from the design document]({{ "/assets/images/multi-column-adding-new-block-in-certain-position-in-the-column.jpg" | relative_url }})
 
-I went through each action with the developers using the prototype, so they could see it in person as well as refer to the design document.
-
-I followed this up by writing JIRA tickets, including detailed acceptance criteria. The developers commented that this was really well documented and set clear expectations for how it should work.
+I walked the developers through each interaction against the working prototype directly, rather than relying on the document alone, then followed up with detailed JIRA tickets and acceptance criteria. The developers specifically called out how clearly it set expectations for how the component should behave.
 
 ## 📣 Post-deployment feedback
 
-The component was live and working as designed. A member of the content team made the following comment in a meeting shortly after using it:
+The component went live and performed as designed. Shortly afterwards, a member of the content team commented in a meeting:
 
 > "I used the new multi-column component and it was super easy"
 
 ## 🏁 Conclusion
 
-I was so glad to hear positive feedback at the end of this project, as my intention had been to make the component feel familiar and speedy. Had we simply delivered the first version I designed we wouldn't have had this outcome.
+That feedback mattered to me because it validated the specific intent behind the design — familiarity and speed — rather than just general usability. Had we shipped the first version I'd designed, I don't think we'd have landed there.
 
-I enjoyed shadowing as I got to sit with the user and understand how the work I was doing directly impacted their day and I had the power to make their working life better through my observations.
+Shadowing the user directly was one of the most valuable parts of this project: it let me see exactly how the component fit into their working day, and gave me a clear, evidence-based basis for the decisions I made to improve it.
 
-Another great outcome from this project was the enthusiasm from the key stakeholder and the rest of the team along the way. There wasn't much interest until people saw the performance of the testable prototype. Realising the problems for themselves and being part of the decision-making for the improved version gave the team a sense of ownership over the outcome and they felt invested enough to be a part of the testing itself.
+The shift in stakeholder engagement over the course of the project was just as significant an outcome as the design itself. Interest was minimal until people saw the prototype performing — and failing — in front of them. Letting the team witness the problems first-hand, and involving them in shaping the improved version, gave them genuine ownership of the outcome, which is why they stayed engaged enough to take part in testing themselves.
